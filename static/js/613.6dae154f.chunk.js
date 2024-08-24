@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunktest_task_frontend=self.webpackChunktest_task_frontend||[]).push([[613],{613:(t,s,e)=>{e.r(s),e.d(s,{default:()=>a});e(43);var n=e(216),h=e(579);const a=()=>{const{id:t}=(0,n.g)();return(0,h.jsx)("div",{children:(0,h.jsxs)("h1",{children:["Chat ID: ",t||"Choose anything chat"]})})}}}]);
-//# sourceMappingURL=613.6dae154f.chunk.js.map
