@@ -1,7 +1,7 @@
 import React, { useEffect, useCallback } from "react";
 import css from "./Modal.module.css";
 
-const Modal = ({ children, onClose, showModal }) => {
+const Modal = ({ children, onClose, showModal, addModal }) => {
   const handlerClick = useCallback(
     (e) => {
       if (e.code === "Escape") onClose();
@@ -21,13 +21,15 @@ const Modal = ({ children, onClose, showModal }) => {
   return (
     <div
       className={
-        showModal ? css.backdrop + " " + css.backdropActive : css.backdrop
+        showModal || addModal
+          ? css.backdrop + " " + css.backdropActive
+          : css.backdrop
       }
       onClick={handlerClick}
     >
       <div
         className={
-          showModal
+          showModal || addModal
             ? css.modalContent + " " + css.modalContentActive
             : css.modalContent
         }

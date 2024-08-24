@@ -5,6 +5,11 @@ export const getChats = async () => {
   return data;
 };
 
+export const getChatById = async (id) => {
+  const { data } = await api.get(`/${id}`);
+  return data;
+};
+
 export const createChat = async (userData) => {
   const { data } = await api.post(`/`, userData);
   return data;

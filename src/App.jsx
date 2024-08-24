@@ -1,8 +1,8 @@
 import React, { Suspense, lazy } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 
-const Layout = lazy(() => import("./components/Layout.jsx"));
-const Chat = lazy(() => import("./components/Chat.jsx"));
+const Layout = lazy(() => import("./components/Layout/Layout.jsx"));
+const Chat = lazy(() => import("./components/Chat/Chat.jsx"));
 
 export const App = () => {
   return (

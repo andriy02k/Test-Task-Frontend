@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import { updateChat } from "../api/chatApi";
+import { createChat } from "../../api/chatApi";
 
-const EditChatModal = ({ chatId, onClose }) => {
+const EditChatModal = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     try {
-      await updateChat(chatId, { firstName, lastName });
+      await createChat({ firstName, lastName });
       setFirstName("");
       setLastName("");
     } catch (error) {
@@ -22,12 +22,14 @@ const EditChatModal = ({ chatId, onClose }) => {
         value={firstName}
         onChange={(e) => setFirstName(e.target.value)}
         placeholder="First Name"
+        required
       />
       <input
         type="text"
         value={lastName}
         onChange={(e) => setLastName(e.target.value)}
         placeholder="Last Name"
+        required
       />
       <button type="submit">Send</button>
     </form>

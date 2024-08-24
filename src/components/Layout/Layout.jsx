@@ -1,11 +1,11 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Aside from "./Aside";
+import ChatList from "../ChatList/ChatList";
 
 const Layout = () => {
   return (
     <>
-      <Aside />
+      <ChatList />
       <div>
         <Outlet />
       </div>
