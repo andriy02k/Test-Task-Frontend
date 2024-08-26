@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getChatById, sendMessage } from "../../api/chatApi";
+import css from "./Chat.module.css";
+import userImage from "../../images/user.png";
+import { Svg } from "../Icons/Icons";
 
 const Chat = () => {
   const { id } = useParams();
   const [chat, setChat] = useState(null);
   const [newMessage, setNewMessage] = useState("");
-  // const [refresh, setRefresh] = useState(false);
 
   useEffect(() => {
     const fetchChat = async () => {
@@ -19,7 +21,7 @@ const Chat = () => {
     };
 
     fetchChat();
-    const interval = setInterval(fetchChat, 1000); // Полінг кожні 5 секунд
+    const interval = setInterval(fetchChat, 1000);
 
     return () => clearInterval(interval);
   }, [id]);
@@ -34,7 +36,6 @@ const Chat = () => {
       });
 
       setNewMessage("");
-      // setRefresh(!refresh);
     } catch (error) {
       console.error(error);
     }
@@ -65,29 +66,44 @@ const Chat = () => {
   }
   return (
     <>
-      <div>
-        <h1>
+      <div className={css.container}>
+        <img
+          className={css.img}
+          src={userImage}
+          alt="user"
+          width={32}
+          height={32}
+        />
+        <h1 className={css.name}>
           {chat.firstName} {chat.lastName}
         </h1>
-        {chat.messages && chat.messages.length > 0 ? (
-          chat.messages.map(({ _id, text, createdAt }) => (
-            <p key={_id}>
-              {text} <br />
-              {getDate(createdAt)}
-            </p>
-          ))
-        ) : (
-          <p>Start chat</p>
-        )}
       </div>
-      <div>
+      {chat.messages && chat.messages.length > 0 ? (
+        chat.messages.map(({ _id, text, createdAt, sender }) => (
+          <div
+            key={_id}
+            className={
+              sender === "Auto-response" ? css.autoMessage : css.myMessage
+            }
+          >
+            <p className={css.text}>{text}</p>
+            <p className={css.date}>{getDate(createdAt)}</p>
+          </div>
+        ))
+      ) : (
+        <p>Start chat</p>
+      )}
+      <div className={css.inputCon}>
         <input
+          className={css.input}
           type="text"
           value={newMessage}
           onChange={handleInputChange}
           placeholder="Type your message"
         />
-        <button onClick={handleSendMessage}>Send</button>
+        <button className={css.button} onClick={handleSendMessage}>
+          <Svg id={"#icon-rocket"} width={12} height={12} />
+        </button>
       </div>
     </>
   );

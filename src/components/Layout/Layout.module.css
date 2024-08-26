@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+}
+
+.chatWindow {
+  margin: 0;
+  width: 100%;
+  font-size: large;
+  font-weight: 700;
+  border: 1px solid grey;
+}

@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.topContainer {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  background-color: rgb(249, 249, 249);
+  padding: 18px;
+  border-bottom: 1px solid gray;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding-right: 26px;
+}
+
+.img {
+  display: block;
+}
+
+.button {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid grey;
+  color: rgb(66, 138, 66);
+  background-color: rgb(175, 228, 175);
+}
+
+.input {
+  border-radius: 15px;
+  border: 1px solid grey;
+  height: 16px;
+  padding: 8px;
+}
+
+.plus {
+  padding-right: 8px;
+}
+
+.title {
+  color: rgb(119, 201, 201);
+  padding: 18px;
+}
+
+.list {
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  padding-bottom: 12px;
+  margin-bottom: 28px;
+}
+
+.imgContainer {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.nameContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.name {
+  margin: 0;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.message {
+  margin: 0;
+  font-size: small;
+}
+
+.dateContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.buttonContainer {
+}
+.date {
+  margin: 0;
+}
+.edit {
+  padding: 6px 10px;
+  border-radius: 15px;
+  border: 1px solid grey;
+  color: rgb(21, 88, 138);
+  background-color: rgb(109, 184, 250);
+}
+.delete {
+  padding: 6px 10px;
+  border-radius: 15px;
+  border: 1px solid grey;
+  color: rgb(143, 27, 27);
+  background-color: rgb(236, 109, 109);
+}

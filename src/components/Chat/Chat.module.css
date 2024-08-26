@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background-color: rgb(249, 249, 249);
+  padding: 18px;
+  border-bottom: 1px solid gray;
+  height: 32px;
+}
+
+.name {
+  font-size: medium;
+}
+
+.autoMessage {
+  text-align: left;
+  background-color: #2f3031;
+  color: #fff;
+  margin-left: 10px;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 35px;
+  max-width: 60%;
+}
+
+.myMessage {
+  text-align: right;
+  background-color: rgb(230, 230, 230);
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 35px;
+  max-width: 15%;
+}
+
+.text {
+  margin: 0;
+}
+
+.date {
+  margin: 0;
+}
+
+.inputCon {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 16px;
+  width: 73%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.input {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid grey;
+  padding: 12px;
+}
+
+.button {
+  width: 4%;
+}
