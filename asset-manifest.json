@@ -1,21 +1,24 @@
 {
   "files": {
     "main.css": "/Test-Task-Frontend/static/css/main.e6c13ad2.css",
-    "main.js": "/Test-Task-Frontend/static/js/main.bee8d1fd.js",
-    "static/css/547.8d3aff8b.chunk.css": "/Test-Task-Frontend/static/css/547.8d3aff8b.chunk.css",
-    "static/js/547.df9046d4.chunk.js": "/Test-Task-Frontend/static/js/547.df9046d4.chunk.js",
-    "static/js/568.d72e2250.chunk.js": "/Test-Task-Frontend/static/js/568.d72e2250.chunk.js",
+    "main.js": "/Test-Task-Frontend/static/js/main.f4b2d627.js",
+    "static/css/189.3770a177.chunk.css": "/Test-Task-Frontend/static/css/189.3770a177.chunk.css",
+    "static/js/189.06b1d37c.chunk.js": "/Test-Task-Frontend/static/js/189.06b1d37c.chunk.js",
+    "static/css/166.829e1c03.chunk.css": "/Test-Task-Frontend/static/css/166.829e1c03.chunk.css",
+    "static/js/166.a4dd2898.chunk.js": "/Test-Task-Frontend/static/js/166.a4dd2898.chunk.js",
     "static/js/213.e45b2ba4.chunk.js": "/Test-Task-Frontend/static/js/213.e45b2ba4.chunk.js",
+    "static/media/icons.svg": "/Test-Task-Frontend/static/media/icons.e0d4449320af6be040b2c066d6e82502.svg",
     "index.html": "/Test-Task-Frontend/index.html",
     "main.e6c13ad2.css.map": "/Test-Task-Frontend/static/css/main.e6c13ad2.css.map",
-    "main.bee8d1fd.js.map": "/Test-Task-Frontend/static/js/main.bee8d1fd.js.map",
-    "547.8d3aff8b.chunk.css.map": "/Test-Task-Frontend/static/css/547.8d3aff8b.chunk.css.map",
-    "547.df9046d4.chunk.js.map": "/Test-Task-Frontend/static/js/547.df9046d4.chunk.js.map",
-    "568.d72e2250.chunk.js.map": "/Test-Task-Frontend/static/js/568.d72e2250.chunk.js.map",
+    "main.f4b2d627.js.map": "/Test-Task-Frontend/static/js/main.f4b2d627.js.map",
+    "189.3770a177.chunk.css.map": "/Test-Task-Frontend/static/css/189.3770a177.chunk.css.map",
+    "189.06b1d37c.chunk.js.map": "/Test-Task-Frontend/static/js/189.06b1d37c.chunk.js.map",
+    "166.829e1c03.chunk.css.map": "/Test-Task-Frontend/static/css/166.829e1c03.chunk.css.map",
+    "166.a4dd2898.chunk.js.map": "/Test-Task-Frontend/static/js/166.a4dd2898.chunk.js.map",
     "213.e45b2ba4.chunk.js.map": "/Test-Task-Frontend/static/js/213.e45b2ba4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.bee8d1fd.js"
+    "static/js/main.f4b2d627.js"
   ]
 }
